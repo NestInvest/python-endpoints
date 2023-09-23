@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@mongo.p0im03b.mongodb.net">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.49">
+    <root id="1">
+      <ServerVersion>6.0.10</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin">
+      <LocalIntrospectionTimestamp>2023-09-23.22:14:46</LocalIntrospectionTimestamp>
+    </schema>
+    <schema id="3" parent="1" name="local">
+      <LocalIntrospectionTimestamp>2023-09-23.22:14:46</LocalIntrospectionTimestamp>
+    </schema>
+  </database-model>
+</dataSource>
