@@ -15,7 +15,7 @@ class Contact(BaseModel):
     agentEmail: str
     
 class Property(BaseModel):
-    propertyId: Field(default_factory=uuid.uuid4, alias="_id")
+    propertyId: str = Field(default_factory=uuid.uuid4, alias="_id")
     propertyName: str = Field(...)
     propertyType: str = Field(...)
     price: str = Field(...)
@@ -32,7 +32,7 @@ class Property(BaseModel):
         populate_by_name = True
         json_schema_extra = {
             "example": {
-                "propertyId": "12345",
+                "propertyId": "066de609-b04a-4b30-b46c-32537c7f1f6e",
                 "propertyName": "Bla Bla",
                 "propertyType": "Single Family House",
                 "price": "350,000",
