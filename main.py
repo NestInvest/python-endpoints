@@ -10,11 +10,15 @@ from typing import List
 from routes import router as property_router
 from dotenv import dotenv_values
 from pymongo import MongoClient
-
-
-config = dotenv_values(".env")
+from fastapi import FastAPI
 
 app = FastAPI()
+config = dotenv_values(".env")
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
 
 @app.on_event("startup")
 def app_startup():
